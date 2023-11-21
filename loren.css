@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    text-transform: capitalize;
+     
+}
+img{
+    width: 100%;
+}
+:root{
+    --main-color:#2fd0bf;
+    --secondery_color: #2c4755;
+}
+/* ****************************** */
+.header{
+   height: 96vh;
+   background-image: url(./imges/background.jpg);
+   background-size: cover;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0px 4px 20px #5f5a5a55;
+}
+.nav i{
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.nav img{
+    height: 50%;
+    width: 80px;
+    position: absolute;
+    left: 120px;
+ }
+ .links{
+    position: absolute;
+    right: 120px;
+ }
+.links ul{
+    display: flex;
+}
+.links ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.links ul  li:hover{
+    transform: translateY(10px);
+    color: var(--main-color);
+}
+.links ul li a{
+  text-decoration: none;
+  color: #000;
+}
+.links ul li a:hover{
+  color: var(--main-color);
+}
+
+/* *************************************** */
+  .landing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .landing .main-landing{
+    width: 310px;
+     
+    z-index: 1;
+    text-align: center;
+  }
+  .landing .main-landing h1{
+    font-size: 50px;
+    color: var(--main-color);
+  }
+  .landing .main-landing p{
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  /* *********************************** */
+  .container-cards{
+    min-height:450px ;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+     padding: 0 15px;
+  }
+  .card{
+    width:calc(90% / 3);
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .card h1{
+    font-size: 22px;
+  }
+    .card i{
+    color: var(--main-color);
+     margin-bottom: 20px;
+  }
+  .card p{
+    padding: 20px 0;
+    line-height: 25px;
+     line-height: 30px;
+  }
+  /* ********************************** */
+  .parent{
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content:end;
+     position: relative;
+  }
+   .parent-h1{
+    position: absolute;
+    top:  80px;
+    font-size: 100px;
+    color: gainsboro;
+    opacity: 0.5;
+     letter-spacing:-5px;
+  }
+   .parent-p{
+    font-size: 16px;
+    position: absolute;
+     top: 160px;
+     opacity: .5;
+      
+  }
+  .parent .service{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+     height: 80%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .parent .service .service-cards{
+     display: flex;
+     flex-wrap: wrap;
+     align-items:end;
+     width: 60%;
+     height: 80%;
+  }
+   
+  .parent .service .service-cards .serv{
+     display: flex;
+     width: 40%;
+     height: 40%;
+  }
+  .parent .service .service-cards .serv .div-h1-p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .parent .service .service-cards .serv .div-h1-p p{
+    opacity: .6;
+  }
+  .parent .service .service-cards .serv .div-h1-p h1{
+    font-size: 20px;
+    margin-bottom: 20px
+  }
+  .parent .service .service-cards i{
+    font-size: 25px;
+    margin-right: 20px;
+    color: var(--main-color);
+     
+  }
+  .service-img  
+  {
+    position: relative;
+    width: 20%;
+  }
+  .service-img::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 115%;
+    background-color:var(--secondery_color);
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index:-1;
+  }
+  /* ********************************************************* */
+  .parent2{
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content:end;
+     position: relative;
+     background-color: #f9f9f9;
+  }
+  
+  .parent2 .portfolio-cards{
+    display: flex;
+    height: 50%;
+     position: absolute;
+     bottom: 50px;
+    flex-wrap: wrap;
+  }
+  .parent2 .portfolio-cards .port-card{
+    width: 30%;
+    margin: auto;
+    height: 100%;
+    background-color: #fff;
+  }
+  
+  .parent2 .portfolio-cards .port-card h1{
+    margin: 30px 0 0 30px;
+  }
+  .parent2 .portfolio-cards .port-card p{
+    margin:25px;
+    color: gray;
+    line-height: 30px;
+  }
+  /* ****************************************************** */
+
+   
+  .parent3{
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content:end;
+     position: relative;
+  }
+  .parent3 .container-about{
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .parent3 .container-about .about-img{
+    width: 25%;
+    position: relative;
+  }
+   
+  .parent3 .container-about .about-img::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color:rgba(220, 220, 220, 0.393);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index:-1;
+  }
+  .parent3 .container-about .about-img::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 90%;
+    background-color:var(--main-color);
+    right: -30px;
+    top: -10%;
+    z-index:-1;
+  }
+  .parent3 .container-about .about-img .div-img::before{
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    left:70%;
+    top:70%;
+    background-color: var(--main-color);
+    z-index: -1;
+  }
+
+  .parent3 .container-about .about-p{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+  }
+  .parent3 .container-about .about-p .p-content{
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .parent3 .container-about .about-p .p-content .p1{
+    font-weight: bold;
+  }
+  .parent3 .container-about .about-p .p-content .p2{
+   color:gray;
+  }
+  hr{
+    width: 50%;
+    border: 1px solid var(--main-color);
+  }
+/* **************************************** */
+
+.parent4{
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  display: flex;
+   align-items: center;
+   background-color:#f9f9f9;
+}
+.parent4 .container-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+.parent4 .container-contact h1{
+  font-size: 30px;
+}
+.parent4 .container-contact a{
+  text-decoration: none;
+  color: var(--main-color);
+  margin: 30px 0;
+  font-size: 26px;
+}
+
+.parent4 .container-contact .icon{
+  display: flex;
+}
+.parent4 .container-contact .icon i{
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.parent4 .footer{
+  height: 10%;
+  background-color: var(--secondery_color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.parent4 .footer span{
+  color: var(--main-color);
+}
+@media(max-width:767px){
+  .nav i{
+    display: block;
+    right: 60px;
+  }
+  .nav img{
+    left:70px
+  }
+  .links ul{
+    display: none;
+  }
+  /* ================================== */
+  .card{
+    width: 80%;
+  }
+  .parent .service .service-cards .serv{
+    width: 100%;
+    height: 30%;
+  }
+  .service-img{
+    display: none;
+  }
+  /* =================================== */
+  .parent2{
+    min-height: 200vh;
+  }
+  .parent2 .portfolio-cards {
+    height: 60%;
+    top:20%
+  }
+  .parent2 .portfolio-cards .port-card {
+    width: 90%;
+    height: 40%;
+    margin-bottom: 20px;
+  }
+  
+  .parent2 .portfolio-cards .port-card img{
+    height: 50%;
+  }
+  /* ========================================================= */
+  .parent3 .container-about{
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+  }
+  .parent3 .container-about .about-img{
+    width: 60%;
+  }
+  .parent3 .container-about .about-p{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parent3 .container-about .about-img::after{
+      display: none;
+  }
+  .parent3 .container-about .about-img::before{
+    display: none;
+}
+  .div-img::before{
+    display: none;
+  }
+  /* ======================================== */
+  .parent4 .container-contact .hh {
+    font-size: 18px;
+  }
+}
