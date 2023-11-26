@@ -426,4 +426,46 @@ img{
   .parent4 .container-contact .hh {
     font-size: 18px;
   }
+   
+}
+@media((min-width:767px) and (max-width:992px)){
+  .card{
+    width: 40%;
+  }
+  .service-img{
+    display: none;
+  }
+
+  .service-img img{
+    display: none;
+  }
+  .parent .service .service-cards{
+    width: 80%;
+    height: 60%;
+    justify-content: center;
+  }
+  .parent .service .service-cards .serv{
+    width: 50%;
+    height: 70%;
+  }
+  .parent .service .service-cards .serv .div-h1-p h1 {
+    font-size: 25px;
+  }
+  .parent .service .service-cards .serv .div-h1-p p{
+    font-size: 20px;
+  }
+   .parent2 .portfolio-cards{
+    height: 74%;
+   }
+  .parent2 .portfolio-cards .port-card{
+    width: 45%;
+    height:auto;
+  }
+  .parent3 .container-about .about-p{
+    align-items: center;
+    width: 90%;
+  }
+  .parent3 .container-about{
+    justify-content: center;
+  }
 }
